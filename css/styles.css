@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.site {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". head head head ."
+        ". intro intro intro ."
+        ". news news tournaments ."
+        ". footer footer footer .";
+    grid-gap: 25px;
+}
+
+.head {
+    grid-area: head;
+    background-color: #02111B;
+}
+
+.intro {
+    grid-area: intro;
+    background-color: #3F4045;
+}
+
+.news {
+    grid-area: news;
+    background-color: #fff;
+}
+
+.tournaments {
+    grid-area: tournaments;
+    background-color: #3F4045;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #02111B;
+}
+
+.site-logo {
+    float: left;
+    padding: 10px 0;
+}
+
+.nav {
+    float: right;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 25px;
+    padding-top: 25px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
